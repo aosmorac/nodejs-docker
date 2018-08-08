@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: .
+    image: backend:whooptag
+    container_name: whooptag-backend
+    command: npm start
+    volumes:
+      - ../app:/backend
+    ports:
+      - "3000:3000"
