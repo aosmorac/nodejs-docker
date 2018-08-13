@@ -4,17 +4,17 @@ Docker PHP con Nodejs y aplicación base
 
 ## Getting Started
 
-Instrucciones para correr este docker. Debe tener instalado gi, docker y docker-compose.
+These instructions allow you to run a nodejs docker and edit the source code from your own pc. You must have git, docker and docker-compose installed.
 
 ### Running
 
-Clone Repositorio
+Clone this repo
 
 ```
-https://github.com/aosmorac/nodejs-docker.git
+git clone https://github.com/aosmorac/nodejs-docker.git
 ```
 
-Ingresar al directorio del repositorio
+Go to code folder 
 
 ```
 cd nodejs-docker
@@ -25,8 +25,14 @@ Run docker
 ```
 docker-compose up
 ```
-Ingresar al container
+Go into docker container
 
 ```
 sudo docker exec -i -t nodejs-backend sh
+```
 
+### Check Base App
+
+Go to an web explorer and open http://localhost:3000
+
+You can check the initial doc in http://localhost:3000/api-docs/ for the initial authentication functionalities.

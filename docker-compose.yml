@@ -2,10 +2,10 @@ version: '2'
 services:
   web:
     build: .
-    image: backend:whooptag
-    container_name: whooptag-backend
+    image: backend:nodejs
+    container_name: backend-nodejs
     command: npm start
     volumes:
-      - ../app:/backend
+      - ../nodejs-docker:/backend
     ports:
       - "3000:3000"
